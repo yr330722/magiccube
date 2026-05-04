@@ -104,6 +104,7 @@ button:active {
   font-size: 40px;
   line-height: 1;
   margin: 0 0 10px;
+  text-align: center;
 }
 
 .brand p,
@@ -111,6 +112,10 @@ button:active {
   color: var(--muted);
   line-height: 1.55;
   margin: 0;
+}
+
+.brand p {
+  text-align: center;
 }
 
 .stats {
