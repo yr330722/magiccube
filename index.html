@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubik Cube Game</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="stage" aria-label="Rubik cube play area">
+        <div id="cube-root"></div>
+      </section>
+
+      <aside class="panel" aria-label="Game controls">
+        <div class="brand">
+          <h1>&#39764;&#26041;</h1>
+          <p>&#25302;&#25341;&#20219;&#24847;&#26059;&#36716;&#35270;&#35282;&#65292;&#28378;&#36718;&#32553;&#25918;&#65292;&#21452;&#20987;&#22797;&#20301;&#12290;</p>
+        </div>
+
+        <div class="stats" aria-label="Game stats">
+          <div>
+            <span>&#27493;&#25968;</span>
+            <strong id="move-count">0</strong>
+          </div>
+          <div>
+            <span>&#26102;&#38388;</span>
+            <strong id="timer">00:00</strong>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="scramble-btn" type="button">&#25171;&#20081;</button>
+          <button id="reset-btn" type="button">&#36824;&#21407;</button>
+        </div>
+
+        <div class="turns" aria-label="Cube turns">
+          <button type="button" data-move="U">U</button>
+          <button type="button" data-move="D">D</button>
+          <button type="button" data-move="L">L</button>
+          <button type="button" data-move="R">R</button>
+          <button type="button" data-move="F">F</button>
+          <button type="button" data-move="B">B</button>
+          <button type="button" data-move="U'">U'</button>
+          <button type="button" data-move="D'">D'</button>
+          <button type="button" data-move="L'">L'</button>
+          <button type="button" data-move="R'">R'</button>
+          <button type="button" data-move="F'">F'</button>
+          <button type="button" data-move="B'">B'</button>
+        </div>
+
+        <p id="message" class="message" role="status">&#20934;&#22791;&#22909;&#20102;&#12290;</p>
+      </aside>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
